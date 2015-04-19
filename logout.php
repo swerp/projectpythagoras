@@ -1,2 +1,9 @@
-<?php include "base.php"; $_SESSION = array(); session_destroy(); ?>
-<meta http-equiv="refresh" content="0;index.php">
+<?php
+
+
+require_once 'core/init.php';
+
+$user = new User();
+$user->logout();
+
+Redirect::to('index.php');
