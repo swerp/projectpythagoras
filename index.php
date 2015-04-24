@@ -13,6 +13,9 @@ if($user->isLoggedIn()) {
 
     <p>Hello, <a href="profile.php?user=<?php echo escape($user->data()->name);?>"><?php echo escape($user->data()->name); ?></p>
 
+<img src=<?php echo escape($user->data()->name);?>.png>
+
+
     <ul>
         <li><a href="update.php">Update Profile</a></li>
         <li><a href="changepassword.php">Change Password</a></li>
